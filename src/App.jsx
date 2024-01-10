@@ -22,21 +22,21 @@ function App() {
               src={data.sprites.other.dream_world.front_default}
             />
             <h1 className="text-2xl font-medium mb-6">{data.name}</h1>
-            <button className="mb-8 text-white  bg-orange-500 py-[2px] px-6 rounded-full">
-              fire
+            <button className="mb-8 text-white bg-orange-500 py-[2px] px-6 rounded-full w-24">
+              {data.types[0].type.name}
             </button>
           </div>
           <div className="flex justify-between items-center">
             <div className="text-center">
-              <h2 className="text-lg font-bold">52</h2>
+              <h2 className="text-lg font-bold">{data.stats[1].base_stat}</h2>
               <span>Attack</span>
             </div>
             <div className="text-center">
-              <h2 className="text-lg font-bold">52</h2>
+              <h2 className="text-lg font-bold">{data.stats[2].base_stat}</h2>
               <span>Defense</span>
             </div>
             <div className="text-center">
-              <h2 className="text-lg font-bold">52</h2>
+              <h2 className="text-lg font-bold">{data.stats[5].base_stat}</h2>
               <span>Speed</span>
             </div>
           </div>
